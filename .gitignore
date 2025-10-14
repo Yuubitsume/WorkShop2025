@@ -1,0 +1,18 @@
+# .gitignore
+
+# Dossiers générés par la compilation
+/build/
+/bin/
+/out/
+
+# Fichiers d'exécutables
+*.exe
+*.out
+*.obj
+*.o
+*.so
+*.dll
+
+# Fichiers de projet spécifiques aux IDEs (optionnel)
+.vscode/
+.idea/

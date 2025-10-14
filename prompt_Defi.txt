@@ -1,0 +1,3 @@
+D14 : 
+"J'ai un défi à réaliser, génère moi le code pour faire un logiciel cross-platform Linux/Windows
+avec un Cmake pour la compilation permettant l’ajout de toutes vos sources et documents du Workshop sur votre Github."
