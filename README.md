@@ -17,12 +17,12 @@ Réaliser et documenter **23 défis** distincts en utilisant l'IA **Gemini** com
 ## 🧑‍🤝‍🧑 L'Équipe
 
 | Nom Prénom | Rôle / Spécialité |
-| :--- | :--- | :--- |
+| :--- | :--- |
 | **[Perez Julien]** | [Rôle défi 10 à 15] |
 | **[Espinoza Antoine]** | [Rôle défi 1 à 5] |
 | **[Penarrubia Valentin]** | [Rôle défi 6 à 9] |
 | **[Hugo]** | [Rôle défi 16 à 20] |
-| **[Jihan Hajem]** [Rôle défi 21 à 25] |
+| **[Jihan Hajem]** | [Rôle défi 21 à 25] |
 
 ---
 
