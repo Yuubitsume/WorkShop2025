@@ -1,0 +1,1462 @@
+
+---
+events:
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:212 (message)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      The system is: Windows - 10.0.26200 - AMD64
+...
+
+---
+events:
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCCompilerId.c.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Version MSBuild 17.8.3+195e7f5a3 pour .NET Framework
+      La génération a démarré 14/10/2025 10:43:39.
+      
+      Projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" sur le noud 1 (cibles par défaut).
+      PrepareForBuild:
+        Création du répertoire "Debug\\".
+        La sortie structurée est activée. La mise en forme du compilateur diagnostics reflète la hiérarchie des erreurs. Pour plus d'informations, consultez https://aka.ms/cpp/structured-output.
+        Création du répertoire "Debug\\CompilerIdC.tlog\\".
+      InitializeBuildStatus:
+        Création de "Debug\\CompilerIdC.tlog\\unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+        Mise à jour de l'horodatage "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TC /FC /errorReport:queue CMakeCCompilerId.c
+        CMakeCCompilerId.c
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
+        CompilerIdC.vcxproj -> C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_C_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Suppression du fichier "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
+        Mise à jour de l'horodatage "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
+      Génération du projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\4.1.2\\CompilerIdC\\CompilerIdC.vcxproj" terminée (cibles par défaut).
+      
+      La génération a réussi.
+          0 Avertissement(s)
+          0 Erreur(s)
+      
+      Temps écoulé 00:00:02.39
+      
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+      
+      Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+      
+      The C compiler identification is MSVC, found in:
+        C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/4.1.2/CompilerIdC/CompilerIdC.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:103 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Php/"
+      - "C:/Program Files/"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Julien/DEV/"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/"
+      - "C:/tools/dart-sdk/bin/"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Julien/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Php/"
+      - "C:/Program Files/"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Julien/DEV/"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/"
+      - "C:/tools/dart-sdk/bin/"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Julien/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/lld-link.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/lld-link.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/lld-link"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/lld-link.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/lld-link.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Php/lld-link.com"
+      - "C:/Program Files/Php/lld-link.exe"
+      - "C:/Program Files/Php/lld-link"
+      - "C:/Program Files/lld-link.com"
+      - "C:/Program Files/lld-link.exe"
+      - "C:/Program Files/lld-link"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/lld-link.com"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/lld-link.exe"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/lld-link"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/lld-link.com"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/lld-link.exe"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/Julien/DEV/lld-link.com"
+      - "C:/Users/Julien/DEV/lld-link.exe"
+      - "C:/Users/Julien/DEV/lld-link"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/lld-link"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/lld-link"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/lld-link.com"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/lld-link.exe"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/lld-link"
+      - "C:/tools/dart-sdk/bin/lld-link.com"
+      - "C:/tools/dart-sdk/bin/lld-link.exe"
+      - "C:/tools/dart-sdk/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/lld-link"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/lld-link.com"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/lld-link.exe"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+      - "C:/Users/Julien/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Julien/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Julien/AppData/Roaming/npm/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_LINKER"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Php/"
+      - "C:/Program Files/"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Julien/DEV/"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/"
+      - "C:/tools/dart-sdk/bin/"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Julien/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/link.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_MT"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "mt"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Php/"
+      - "C:/Program Files/"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Julien/DEV/"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/"
+      - "C:/tools/dart-sdk/bin/"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Julien/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/mt.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/mt.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/mt"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/mt.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/mt.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/mt"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/mt.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/mt.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/mt"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/mt.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/mt.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/mt"
+      - "C:/Windows/System32/mt.com"
+      - "C:/Windows/System32/mt.exe"
+      - "C:/Windows/System32/mt"
+      - "C:/Windows/mt.com"
+      - "C:/Windows/mt.exe"
+      - "C:/Windows/mt"
+      - "C:/Windows/System32/wbem/mt.com"
+      - "C:/Windows/System32/wbem/mt.exe"
+      - "C:/Windows/System32/wbem/mt"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/mt"
+      - "C:/Windows/System32/OpenSSH/mt.com"
+      - "C:/Windows/System32/OpenSSH/mt.exe"
+      - "C:/Windows/System32/OpenSSH/mt"
+      - "C:/Program Files/Git/cmd/mt.com"
+      - "C:/Program Files/Git/cmd/mt.exe"
+      - "C:/Program Files/Git/cmd/mt"
+      - "C:/ProgramData/chocolatey/bin/mt.com"
+      - "C:/ProgramData/chocolatey/bin/mt.exe"
+      - "C:/ProgramData/chocolatey/bin/mt"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/mt"
+      - "C:/Program Files/Php/mt.com"
+      - "C:/Program Files/Php/mt.exe"
+      - "C:/Program Files/Php/mt"
+      - "C:/Program Files/mt.com"
+      - "C:/Program Files/mt.exe"
+      - "C:/Program Files/mt"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/mt.com"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/mt.exe"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/mt"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/mt.com"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/mt.exe"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/mt"
+      - "C:/Program Files/nodejs/mt.com"
+      - "C:/Program Files/nodejs/mt.exe"
+      - "C:/Program Files/nodejs/mt"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/mt"
+      - "C:/Program Files/CMake/bin/mt.com"
+      - "C:/Program Files/CMake/bin/mt.exe"
+      - "C:/Program Files/CMake/bin/mt"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/mt.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/mt.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/mt"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/mt.com"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/mt.exe"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/mt"
+      - "C:/Users/Julien/DEV/mt.com"
+      - "C:/Users/Julien/DEV/mt.exe"
+      - "C:/Users/Julien/DEV/mt"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/mt.com"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/mt.exe"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/mt"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/mt.com"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/mt.exe"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/mt"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/mt.com"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/mt.exe"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/mt"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/mt.com"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/mt.exe"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/mt"
+      - "C:/tools/dart-sdk/bin/mt.com"
+      - "C:/tools/dart-sdk/bin/mt.exe"
+      - "C:/tools/dart-sdk/bin/mt"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/mt.com"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/mt.exe"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/mt"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/mt.com"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/mt.exe"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/mt"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/mt.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/mt.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/mt"
+      - "C:/Users/Julien/AppData/Roaming/npm/mt.com"
+      - "C:/Users/Julien/AppData/Roaming/npm/mt.exe"
+      - "C:/Users/Julien/AppData/Roaming/npm/mt"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:238 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_AR"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lib"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Php/"
+      - "C:/Program Files/"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Julien/DEV/"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/"
+      - "C:/tools/dart-sdk/bin/"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Julien/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lib.com"
+    found: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lib.exe"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:462 (find_file)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:500 (CMAKE_DETERMINE_COMPILER_ID_WRITE)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:8 (CMAKE_DETERMINE_COMPILER_ID_BUILD)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "file"
+    variable: "src_in"
+    description: "Path to a file."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "CMakeCXXCompilerId.cpp.in"
+    candidate_directories:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/"
+    found: "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+      Compiler:  
+      Build flags: 
+      Id flags:  
+      
+      The output was:
+      0
+      Version MSBuild 17.8.3+195e7f5a3 pour .NET Framework
+      La génération a démarré 14/10/2025 10:43:42.
+      
+      Projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\4.1.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" sur le noud 1 (cibles par défaut).
+      PrepareForBuild:
+        Création du répertoire "Debug\\".
+        La sortie structurée est activée. La mise en forme du compilateur diagnostics reflète la hiérarchie des erreurs. Pour plus d'informations, consultez https://aka.ms/cpp/structured-output.
+        Création du répertoire "Debug\\CompilerIdCXX.tlog\\".
+      InitializeBuildStatus:
+        Création de "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+        Mise à jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+      ClCompile:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /nologo /W0 /WX- /diagnostics:column /Od /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\\\" /Fd"Debug\\vc143.pdb" /external:W0 /Gd /TP /FC /errorReport:queue CMakeCXXCompilerId.cpp
+        CMakeCXXCompilerId.cpp
+      Link:
+        C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
+        CompilerIdCXX.vcxproj -> C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\4.1.2\\CompilerIdCXX\\CompilerIdCXX.exe
+      PostBuildEvent:
+        for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+        :VCEnd
+        CMAKE_CXX_COMPILER=C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\Hostx64\\x64\\cl.exe
+      FinalizeBuildStatus:
+        Suppression du fichier "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
+        Mise à jour de l'horodatage "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
+      Génération du projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\4.1.2\\CompilerIdCXX\\CompilerIdCXX.vcxproj" terminée (cibles par défaut).
+      
+      La génération a réussi.
+          0 Avertissement(s)
+          0 Erreur(s)
+      
+      Temps écoulé 00:00:01.25
+      
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+      
+      Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+      
+      The CXX compiler identification is MSVC, found in:
+        C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/4.1.2/CompilerIdCXX/CompilerIdCXX.exe
+      
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:37 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:65 (__resolve_tool_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeFindBinUtils.cmake:104 (__resolve_linker_path)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:206 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "_CMAKE_TOOL_WITH_PATH"
+    description: "Path to a program."
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: false
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: false
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "lld-link"
+    candidate_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Php/"
+      - "C:/Program Files/"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Julien/DEV/"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/"
+      - "C:/tools/dart-sdk/bin/"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Julien/AppData/Roaming/npm/"
+    searched_directories:
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.com"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link.exe"
+      - "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/Hostx64/x64/lld-link"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/lld-link.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/lld-link.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/lld-link"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/lld-link"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/lld-link.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/lld-link.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/lld-link"
+      - "C:/Windows/System32/lld-link.com"
+      - "C:/Windows/System32/lld-link.exe"
+      - "C:/Windows/System32/lld-link"
+      - "C:/Windows/lld-link.com"
+      - "C:/Windows/lld-link.exe"
+      - "C:/Windows/lld-link"
+      - "C:/Windows/System32/wbem/lld-link.com"
+      - "C:/Windows/System32/wbem/lld-link.exe"
+      - "C:/Windows/System32/wbem/lld-link"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/lld-link"
+      - "C:/Windows/System32/OpenSSH/lld-link.com"
+      - "C:/Windows/System32/OpenSSH/lld-link.exe"
+      - "C:/Windows/System32/OpenSSH/lld-link"
+      - "C:/Program Files/Git/cmd/lld-link.com"
+      - "C:/Program Files/Git/cmd/lld-link.exe"
+      - "C:/Program Files/Git/cmd/lld-link"
+      - "C:/ProgramData/chocolatey/bin/lld-link.com"
+      - "C:/ProgramData/chocolatey/bin/lld-link.exe"
+      - "C:/ProgramData/chocolatey/bin/lld-link"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/lld-link"
+      - "C:/Program Files/Php/lld-link.com"
+      - "C:/Program Files/Php/lld-link.exe"
+      - "C:/Program Files/Php/lld-link"
+      - "C:/Program Files/lld-link.com"
+      - "C:/Program Files/lld-link.exe"
+      - "C:/Program Files/lld-link"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/lld-link.com"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/lld-link.exe"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/lld-link"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/lld-link.com"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/lld-link.exe"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/lld-link"
+      - "C:/Program Files/nodejs/lld-link.com"
+      - "C:/Program Files/nodejs/lld-link.exe"
+      - "C:/Program Files/nodejs/lld-link"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/lld-link"
+      - "C:/Program Files/CMake/bin/lld-link.com"
+      - "C:/Program Files/CMake/bin/lld-link.exe"
+      - "C:/Program Files/CMake/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/lld-link"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/lld-link"
+      - "C:/Users/Julien/DEV/lld-link.com"
+      - "C:/Users/Julien/DEV/lld-link.exe"
+      - "C:/Users/Julien/DEV/lld-link"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/lld-link"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/lld-link"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/lld-link.com"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/lld-link.exe"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/lld-link"
+      - "C:/tools/dart-sdk/bin/lld-link.com"
+      - "C:/tools/dart-sdk/bin/lld-link.exe"
+      - "C:/tools/dart-sdk/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/lld-link"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/lld-link.com"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/lld-link.exe"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/lld-link"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/lld-link"
+      - "C:/Users/Julien/AppData/Roaming/npm/lld-link.com"
+      - "C:/Users/Julien/AppData/Roaming/npm/lld-link.exe"
+      - "C:/Users/Julien/AppData/Roaming/npm/lld-link"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+  -
+    kind: "find-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineRCCompiler.cmake:40 (find_program)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:574 (enable_language)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC.cmake:547 (__windows_compiler_msvc_enable_rc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeCInformation.cmake:48 (include)"
+      - "CMakeLists.txt:7 (project)"
+    mode: "program"
+    variable: "CMAKE_RC_COMPILER"
+    description: "RC compiler"
+    settings:
+      SearchFramework: "NEVER"
+      SearchAppBundle: "NEVER"
+      CMAKE_FIND_USE_CMAKE_PATH: true
+      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
+      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
+      CMAKE_FIND_USE_INSTALL_PREFIX: true
+    names:
+      - "rc"
+    candidate_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/"
+      - "C:/Windows/System32/"
+      - "C:/Windows/"
+      - "C:/Windows/System32/wbem/"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/"
+      - "C:/Windows/System32/OpenSSH/"
+      - "C:/Program Files/Git/cmd/"
+      - "C:/ProgramData/chocolatey/bin/"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/"
+      - "C:/Program Files/Php/"
+      - "C:/Program Files/"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/"
+      - "C:/Program Files/nodejs/"
+      - "C:/Program Files/Docker/Docker/resources/bin/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/"
+      - "C:/Users/Julien/DEV/"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/"
+      - "C:/tools/dart-sdk/bin/"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/"
+      - "C:/Users/Julien/AppData/Roaming/npm/"
+      - "C:/Program Files/bin/"
+      - "C:/Program Files/sbin/"
+      - "C:/Program Files/"
+      - "C:/Program Files (x86)/bin/"
+      - "C:/Program Files (x86)/sbin/"
+      - "C:/Program Files (x86)/"
+      - "C:/Program Files/CMake/bin/"
+      - "C:/Program Files/CMake/sbin/"
+      - "C:/Program Files/CMake/"
+      - "C:/Program Files (x86)/WorkshopApp/bin/"
+      - "C:/Program Files (x86)/WorkshopApp/sbin/"
+      - "C:/Program Files (x86)/WorkshopApp/"
+    searched_directories:
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/rc.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/rc.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/bin/rc"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/rc.com"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/rc.exe"
+      - "C:/Program Files (x86)/VMware/VMware Workstation/bin/rc"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/rc.com"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/rc.exe"
+      - "C:/Program Files/Microsoft/jdk-17.0.8.7-hotspot/rc"
+      - "C:/Windows/System32/rc.com"
+      - "C:/Windows/System32/rc.exe"
+      - "C:/Windows/System32/rc"
+      - "C:/Windows/rc.com"
+      - "C:/Windows/rc.exe"
+      - "C:/Windows/rc"
+      - "C:/Windows/System32/wbem/rc.com"
+      - "C:/Windows/System32/wbem/rc.exe"
+      - "C:/Windows/System32/wbem/rc"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.com"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc.exe"
+      - "C:/Windows/System32/WindowsPowerShell/v1.0/rc"
+      - "C:/Windows/System32/OpenSSH/rc.com"
+      - "C:/Windows/System32/OpenSSH/rc.exe"
+      - "C:/Windows/System32/OpenSSH/rc"
+      - "C:/Program Files/Git/cmd/rc.com"
+      - "C:/Program Files/Git/cmd/rc.exe"
+      - "C:/Program Files/Git/cmd/rc"
+      - "C:/ProgramData/chocolatey/bin/rc.com"
+      - "C:/ProgramData/chocolatey/bin/rc.exe"
+      - "C:/ProgramData/chocolatey/bin/rc"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.com"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc.exe"
+      - "C:/Program Files (x86)/Windows Kits/10/Windows Performance Toolkit/rc"
+      - "C:/Program Files/Php/rc.com"
+      - "C:/Program Files/Php/rc.exe"
+      - "C:/Program Files/Php/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/rc.com"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/rc.exe"
+      - "C:/Program Files/MongoDB/mongosh-2.3.3-win32-x64/rc"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/rc.com"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/rc.exe"
+      - "C:/Apache/Maven/apache-maven-3.9.9/bin/rc"
+      - "C:/Program Files/nodejs/rc.com"
+      - "C:/Program Files/nodejs/rc.exe"
+      - "C:/Program Files/nodejs/rc"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.com"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc.exe"
+      - "C:/Program Files/Docker/Docker/resources/bin/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/rc.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/rc.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WindowsApps/rc"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/rc.com"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/rc.exe"
+      - "C:/Users/Julien/AppData/Local/Programs/Microsoft VS Code/bin/rc"
+      - "C:/Users/Julien/DEV/rc.com"
+      - "C:/Users/Julien/DEV/rc.exe"
+      - "C:/Users/Julien/DEV/rc"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/rc.com"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/rc.exe"
+      - "C:/Users/Julien/AppData/Local/Packages/PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0/LocalCache/local-packages/Python311/Scripts/rc"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/rc.com"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/rc.exe"
+      - "C:/Users/Julien/AppData/Local/JetBrains/Toolbox/scripts/rc"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/rc.com"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/rc.exe"
+      - "C:/Users/Julien/Documents/Flutter/flutter/bin/rc"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/rc.com"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/rc.exe"
+      - "C:/Users/Julien/AppData/Local/Android/Sdk/rc"
+      - "C:/tools/dart-sdk/bin/rc.com"
+      - "C:/tools/dart-sdk/bin/rc.exe"
+      - "C:/tools/dart-sdk/bin/rc"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/rc.com"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/rc.exe"
+      - "C:/Users/Julien/AppData/Local/Pub/Cache/bin/rc"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/rc.com"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/rc.exe"
+      - "C:/Users/Julien/AppData/Roaming/Composer/vendor/bin/rc"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/rc.com"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/rc.exe"
+      - "C:/Users/Julien/AppData/Local/Microsoft/WinGet/Packages/Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe/rc"
+      - "C:/Users/Julien/AppData/Roaming/npm/rc.com"
+      - "C:/Users/Julien/AppData/Roaming/npm/rc.exe"
+      - "C:/Users/Julien/AppData/Roaming/npm/rc"
+      - "C:/Program Files/bin/rc.com"
+      - "C:/Program Files/bin/rc.exe"
+      - "C:/Program Files/bin/rc"
+      - "C:/Program Files/sbin/rc.com"
+      - "C:/Program Files/sbin/rc.exe"
+      - "C:/Program Files/sbin/rc"
+      - "C:/Program Files/rc.com"
+      - "C:/Program Files/rc.exe"
+      - "C:/Program Files/rc"
+      - "C:/Program Files (x86)/bin/rc.com"
+      - "C:/Program Files (x86)/bin/rc.exe"
+      - "C:/Program Files (x86)/bin/rc"
+      - "C:/Program Files (x86)/sbin/rc.com"
+      - "C:/Program Files (x86)/sbin/rc.exe"
+      - "C:/Program Files (x86)/sbin/rc"
+      - "C:/Program Files (x86)/rc.com"
+      - "C:/Program Files (x86)/rc.exe"
+      - "C:/Program Files (x86)/rc"
+      - "C:/Program Files/CMake/bin/rc.com"
+      - "C:/Program Files/CMake/bin/rc.exe"
+      - "C:/Program Files/CMake/bin/rc"
+      - "C:/Program Files/CMake/sbin/rc.com"
+      - "C:/Program Files/CMake/sbin/rc.exe"
+      - "C:/Program Files/CMake/sbin/rc"
+      - "C:/Program Files/CMake/rc.com"
+      - "C:/Program Files/CMake/rc.exe"
+      - "C:/Program Files/CMake/rc"
+      - "C:/Program Files (x86)/WorkshopApp/bin/rc.com"
+      - "C:/Program Files (x86)/WorkshopApp/bin/rc.exe"
+      - "C:/Program Files (x86)/WorkshopApp/bin/rc"
+      - "C:/Program Files (x86)/WorkshopApp/sbin/rc.com"
+      - "C:/Program Files (x86)/WorkshopApp/sbin/rc.exe"
+      - "C:/Program Files (x86)/WorkshopApp/sbin/rc"
+      - "C:/Program Files (x86)/WorkshopApp/rc.com"
+      - "C:/Program Files (x86)/WorkshopApp/rc.exe"
+      - "C:/Program Files (x86)/WorkshopApp/rc"
+    found: false
+    search_context:
+      ENV{PATH}:
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\bin"
+        - "C:\\Program Files (x86)\\VMware\\VMware Workstation\\bin\\"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\"
+        - "C:\\WINDOWS\\system32"
+        - "C:\\WINDOWS"
+        - "C:\\WINDOWS\\System32\\Wbem"
+        - "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\"
+        - "C:\\WINDOWS\\System32\\OpenSSH\\"
+        - "C:\\Program Files\\Git\\cmd"
+        - "C:\\Program Files\\Microsoft\\jdk-17.0.8.7-hotspot\\\\bin"
+        - "C:\\ProgramData\\chocolatey\\bin"
+        - "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\"
+        - "C:\\Program Files\\Php"
+        - "C:\\Program Files"
+        - "C:\\Program Files\\MongoDB\\mongosh-2.3.3-win32-x64"
+        - "C:\\Apache\\Maven\\apache-maven-3.9.9\\bin"
+        - "C:\\Program Files\\nodejs\\"
+        - "C:\\Program Files\\Docker\\Docker\\resources\\bin"
+        - "C:\\Program Files\\CMake\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Local\\Programs\\Microsoft VS Code\\bin"
+        - "C:\\Users\\Julien\\DEV"
+        - "C:\\Users\\Julien\\AppData\\Local\\Packages\\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\\LocalCache\\local-packages\\Python311\\Scripts\\"
+        - "C:\\Users\\Julien\\AppData\\Local\\JetBrains\\Toolbox\\scripts"
+        - "C:\\Users\\Julien\\Documents\\Flutter\\flutter\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Android\\Sdk"
+        - "C:\\tools\\dart-sdk\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Pub\\Cache\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WindowsApps"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\Composer\\vendor\\bin"
+        - "C:\\Users\\Julien\\AppData\\Local\\Microsoft\\WinGet\\Packages\\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe"
+        - "C:\\Users\\Julien\\AppData\\Roaming\\npm"
+        - "C:\\Program Files\\CMake\\bin"
+      CMAKE_INSTALL_PREFIX: "C:/Program Files (x86)/WorkshopApp"
+      CMAKE_SYSTEM_PREFIX_PATH:
+        - "C:/Program Files"
+        - "C:/Program Files (x86)"
+        - "C:/Program Files/CMake"
+        - "C:/Program Files (x86)/WorkshopApp"
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting C compiler ABI info"
+    directories:
+      source: "C:/Users/Julien/Documents/4\u00e8me ann\u00e9e/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-9e49e6"
+      binary: "C:/Users/Julien/Documents/4\u00e8me ann\u00e9e/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-9e49e6"
+    cmakeVariables:
+      CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
+      CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_C_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-9e49e6'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_d2207.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Version MSBuild 17.8.3+195e7f5a3 pour .NET Framework
+        La génération a démarré 14/10/2025 10:43:44.
+        
+        Projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-9e49e6\\cmTC_d2207.vcxproj" sur le noud 1 (cibles par défaut).
+        PrepareForBuild:
+          Création du répertoire "cmTC_d2207.dir\\Debug\\".
+          La sortie structurée est activée. La mise en forme du compilateur diagnostics reflète la hiérarchie des erreurs. Pour plus d'informations, consultez https://aka.ms/cpp/structured-output.
+          Création du répertoire "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-9e49e6\\Debug\\".
+          Création du répertoire "cmTC_d2207.dir\\Debug\\cmTC_d2207.tlog\\".
+        InitializeBuildStatus:
+          Création de "cmTC_d2207.dir\\Debug\\cmTC_d2207.tlog\\unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+          Mise à jour de l'horodatage "cmTC_d2207.dir\\Debug\\cmTC_d2207.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_d2207.dir\\Debug\\\\" /Fd"cmTC_d2207.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          Compilateur d'optimisation Microsoft (R) C/C++ version 19.38.33133 pour x64
+          Copyright (C) Microsoft Corporation. Tous droits réservés.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Fo"cmTC_d2207.dir\\Debug\\\\" /Fd"cmTC_d2207.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCCompilerABI.c"
+          CMakeCCompilerABI.c
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-9e49e6\\Debug\\cmTC_d2207.exe" /INCREMENTAL /ILK:"cmTC_d2207.dir\\Debug\\cmTC_d2207.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-9e49e6/Debug/cmTC_d2207.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-9e49e6/Debug/cmTC_d2207.lib" /MACHINE:X64  /machine:x64 cmTC_d2207.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_d2207.vcxproj -> C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-9e49e6\\Debug\\cmTC_d2207.exe
+        FinalizeBuildStatus:
+          Suppression du fichier "cmTC_d2207.dir\\Debug\\cmTC_d2207.tlog\\unsuccessfulbuild".
+          Mise à jour de l'horodatage "cmTC_d2207.dir\\Debug\\cmTC_d2207.tlog\\cmTC_d2207.lastbuildstate".
+        Génération du projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-9e49e6\\cmTC_d2207.vcxproj" terminée (cibles par défaut).
+        
+        La génération a réussi.
+            0 Avertissement(s)
+            0 Erreur(s)
+        
+        Temps écoulé 00:00:00.97
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed C implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'C': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+  -
+    kind: "try_compile-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:83 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    checks:
+      - "Detecting CXX compiler ABI info"
+    directories:
+      source: "C:/Users/Julien/Documents/4\u00e8me ann\u00e9e/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-bkxu05"
+      binary: "C:/Users/Julien/Documents/4\u00e8me ann\u00e9e/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-bkxu05"
+    cmakeVariables:
+      CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
+      CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
+      CMAKE_CXX_SCAN_FOR_MODULES: "OFF"
+      CMAKE_EXE_LINKER_FLAGS: "/machine:x64"
+    buildResult:
+      variable: "CMAKE_CXX_ABI_COMPILED"
+      cached: true
+      stdout: |
+        Change Dir: 'C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-bkxu05'
+        
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_a3109.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Version MSBuild 17.8.3+195e7f5a3 pour .NET Framework
+        La génération a démarré 14/10/2025 10:43:45.
+        
+        Projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-bkxu05\\cmTC_a3109.vcxproj" sur le noud 1 (cibles par défaut).
+        PrepareForBuild:
+          Création du répertoire "cmTC_a3109.dir\\Debug\\".
+          La sortie structurée est activée. La mise en forme du compilateur diagnostics reflète la hiérarchie des erreurs. Pour plus d'informations, consultez https://aka.ms/cpp/structured-output.
+          Création du répertoire "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-bkxu05\\Debug\\".
+          Création du répertoire "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\".
+        InitializeBuildStatus:
+          Création de "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\unsuccessfulbuild", car "AlwaysCreate" a été spécifié.
+          Mise à jour de l'horodatage "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\unsuccessfulbuild".
+        ClCompile:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_a3109.dir\\Debug\\\\" /Fd"cmTC_a3109.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          Compilateur d'optimisation Microsoft (R) C/C++ version 19.38.33133 pour x64
+          Copyright (C) Microsoft Corporation. Tous droits réservés.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /GR /Fo"cmTC_a3109.dir\\Debug\\\\" /Fd"cmTC_a3109.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-4.1\\Modules\\CMakeCXXCompilerABI.cpp"
+          CMakeCXXCompilerABI.cpp
+        Link:
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.38.33130\\bin\\HostX64\\x64\\link.exe /OUT:"C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-bkxu05\\Debug\\cmTC_a3109.exe" /INCREMENTAL /ILK:"cmTC_a3109.dir\\Debug\\cmTC_a3109.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-bkxu05/Debug/cmTC_a3109.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /IMPLIB:"C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/CMakeFiles/CMakeScratch/TryCompile-bkxu05/Debug/cmTC_a3109.lib" /MACHINE:X64  /machine:x64 cmTC_a3109.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_a3109.vcxproj -> C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-bkxu05\\Debug\\cmTC_a3109.exe
+        FinalizeBuildStatus:
+          Suppression du fichier "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\unsuccessfulbuild".
+          Mise à jour de l'horodatage "cmTC_a3109.dir\\Debug\\cmTC_a3109.tlog\\cmTC_a3109.lastbuildstate".
+        Génération du projet "C:\\Users\\Julien\\Documents\\4ème année\\WorkShop2025\\D14\\CMakeFiles\\CMakeScratch\\TryCompile-bkxu05\\cmTC_a3109.vcxproj" terminée (cibles par défaut).
+        
+        La génération a réussi.
+            0 Avertissement(s)
+            0 Erreur(s)
+        
+        Temps écoulé 00:00:01.07
+        
+      exitCode: 0
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:253 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Parsed CXX implicit link information:
+        link line regex: [^( *|.*[/\\])(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\\]+-)?ld|collect2)[^/\\]*( |$)]
+        linker tool regex: [^[ 	]*(->|")?[ 	]*(([^"]*[/\\])?(ld[0-9]*(|\\.[a-rt-z][a-z]*|\\.s[a-np-z][a-z]*|\\.so[a-z]+)|link\\.exe|lld-link(\\.exe)?))("|,| |$)]
+        linker tool for 'CXX': C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe
+        implicit libs: []
+        implicit objs: []
+        implicit dirs: []
+        implicit fwks: []
+      
+      
+  -
+    kind: "message-v1"
+    backtrace:
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/Internal/CMakeDetermineLinkerId.cmake:36 (message)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeDetermineCompilerABI.cmake:299 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-4.1/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "CMakeLists.txt:7 (project)"
+    message: |
+      Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.38.33130/bin/HostX64/x64/link.exe" "-v"
+      Microsoft (R) Incremental Linker Version 14.38.33133.0
+      Copyright (C) Microsoft Corporation.  All rights reserved.
+...
