@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: api-project-a-service
+spec:
+  selector:
+    app: project-a # Cibler les Pods du déploiement
+  ports:
+    - protocol: TCP
+      port: 80 # Port interne du Service
+      targetPort: 8080 # Port exposé par le conteneur Docker
+  type: ClusterIP # Accès interne au cluster (utilisé par l'Ingress)

@@ -1,0 +1,23 @@
+all:
+  hosts:
+  children:
+    # Groupe pour les nœuds Control Plane de Kubernetes
+    k8s_control_plane:
+      hosts:
+        # IP fournie par terraform/outputs.tf (exemple)
+        control_01:
+          ansible_host: "{{ output.control_plane_ip }}" 
+          ansible_user: ubuntu
+
+    # Groupe pour les nœuds Worker de Kubernetes
+    k8s_workers:
+      hosts:
+        worker_01:
+          ansible_host: "{{ output.worker_public_ips[0] }}"
+        worker_02:
+          ansible_host: "{{ output.worker_public_ips[1] }}"
+        worker_03:
+          ansible_host: "{{ output.worker_public_ips[2] }}"
+      vars:
+        ansible_user: ubuntu
+        # Définir l'utilisateur et la clé SSH

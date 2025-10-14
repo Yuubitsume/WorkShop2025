@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: api-project-a
+  labels:
+    app: project-a
+spec:
+  replicas: 3 # HA: Garantit 3 instances minimum
+  selector:
+    matchLabels:
+      app: project-a
+  template:
+    metadata:
+      labels:
+        app: project-a
+    spec:
+      containers:
+      - name: api-container
+        image: your-registry.com/project-a:latest # Image tirée de la Registry
+        ports:
+        - containerPort: 8080
+        env:
+          - name: DB_HOST
+            value: "restored-db-cluster-ip" # Se connecter à la BDD restaurée
+        
+        # Health Status: Kubernetes vérifie la santé du conteneur
+        livenessProbe:
+          httpGet:
+            path: /health # Endpoint de vérification de la santé
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 5
+        readinessProbe:
+          httpGet:
+            path: /ready
+            port: 8080
+          periodSeconds: 5

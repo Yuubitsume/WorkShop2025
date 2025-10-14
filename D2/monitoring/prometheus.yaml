@@ -1,0 +1,39 @@
+global:
+  scrape_interval: 15s # Fréquence de collecte des métriques
+
+scrape_configs:
+  # 1. Scraping des composants du cluster Kubernetes
+  - job_name: 'kubernetes-nodes'
+    kubernetes_sd_configs:
+      - role: node
+    relabel_configs:
+      - action: labelmap
+        regex: __meta_kubernetes_node_label_(.+)
+      - target_label: __address__
+        replacement: $(__address__):9100 # Assumer node_exporter sur 9100
+
+  # 2. Scraping des services/applications (ex: project-a)
+  - job_name: 'kubernetes-services'
+    kubernetes_sd_configs:
+      - role: endpoints
+    relabel_configs:
+      # Cibler les services ayant l'annotation prometheus.io/scrape=true
+      - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_scrape]
+        action: keep
+        regex: true
+      # Utiliser le port spécifié dans l'annotation
+      - source_labels: [__meta_kubernetes_service_annotation_prometheus_io_port]
+        action: replace
+        target_label: __address__
+        regex: (.+)
+        replacement: $(__meta_kubernetes_service_cluster_ip):$1 
+
+  # 3. Surveillance du Health Status de l'API (Application)
+  - job_name: 'project-a-health'
+    metrics_path: /metrics # Chemin des métriques de l'application (si disponible)
+    kubernetes_sd_configs:
+      - role: pod
+    relabel_configs:
+      - source_labels: [__meta_kubernetes_pod_label_app]
+        regex: project-a # Cibler uniquement les pods du projet A
+        action: keep

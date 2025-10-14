@@ -1,0 +1,16 @@
+apiVersion: velero.io/v1
+kind: Schedule
+metadata:
+  name: daily-full-backup
+spec:
+  schedule: "0 0 * * *" # Tous les jours à minuit
+  template:
+    ttl: 720h0m0s # Durée de vie des sauvegardes: 30 jours
+    includedNamespaces:
+      - production-project-a # Inclure uniquement les namespaces critiques
+      - production-project-b
+    includedResources:
+      - deployments
+      - persistentvolumeclaims # Crucial pour les données
+    defaultVolumesToRestic: true # Sauvegarde des volumes avec Restic (par défaut)
+    storageLocation: default

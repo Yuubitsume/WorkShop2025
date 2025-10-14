@@ -1,0 +1,25 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: api-project-a-ingress
+  annotations:
+    # Annotation pour le certificat SSL (ex: cert-manager)
+    # kubernetes.io/tls-acme: "true" 
+    # Annotation spécifique au Load Balancer (ex: AWS ALB)
+    # alb.ingress.kubernetes.io/scheme: internet-facing
+spec:
+  rules:
+  - host: api.projet-a.pra.com # Nom de domaine à pointer sur ce service
+    http:
+      paths:
+      - path: /
+        pathType: Prefix
+        backend:
+          service:
+            name: api-project-a-service # Cibler le Service K8s
+            port:
+              number: 80 # Port du Service K8s
+  tls: # Configuration SSL/TLS
+  - hosts:
+    - api.projet-a.pra.com
+    secretName: project-a-tls-secret # Secret contenant le certificat
