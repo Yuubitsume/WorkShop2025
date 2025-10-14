@@ -1,0 +1,10 @@
+^C:\USERS\JULIEN\DOCUMENTS\4ÈME ANNÉE\WORKSHOP2025\D14\CMAKEFILES\895B7B37367C0014CEC6EF5A9D7EFFAB\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Julien/Documents/4ème année/WorkShop2025/D14" "-BC:/Users/Julien/Documents/4ème année/WorkShop2025/D14" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Julien/Documents/4ème année/WorkShop2025/D14/WorkshopApp.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
