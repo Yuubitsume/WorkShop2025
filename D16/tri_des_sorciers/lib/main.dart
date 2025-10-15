@@ -47,11 +47,32 @@ class QCMController with ChangeNotifier {
   int _indexQuestion = 0;
   SorcierType? _resultatFinal;
 
+  //Nouveau Champ Privé
+  bool _estEnChargement = false;
+
   int get indexQuestion => _indexQuestion;
   // Le getter simple ne cause pas de problème d'initialisation 'this'
   List<Question> get questions => _questions; 
   SorcierType? get resultatFinal => _resultatFinal;
   bool get estTermine => _indexQuestion >= _questions.length;
+
+  // NOUVEAU GETTER PUBLIC (qui résout l'erreur dans qcm_screen.dart)
+  bool get estEnChargement => _estEnChargement; 
+
+  // NOUVELLE FONCTION pour déclencher le Patronus Loader
+  void declencherChargementEtTri() {
+    if (_estEnChargement) return;
+
+     _estEnChargement = true;
+    notifyListeners();
+
+    Future.delayed(const Duration(seconds: 3), () {
+      _resultatFinal = data.determinerSorcier(_scores);
+      
+      _estEnChargement = false;
+      notifyListeners();
+    });
+  }
 
   void repondre(Reponse reponse) {
     // 1. Appliquer les points
@@ -66,6 +87,7 @@ class QCMController with ChangeNotifier {
     // 3. Vérifier la fin du QCM
     if (estTermine) {
       _resultatFinal = data.determinerSorcier(_scores);
+      declencherChargementEtTri();
     }
 
     notifyListeners(); // Rafraîchit l'interface utilisateur
@@ -74,6 +96,7 @@ class QCMController with ChangeNotifier {
   void recommencer() {
     _indexQuestion = 0;
     _resultatFinal = null;
+    _estEnChargement = false; // Réinitialistion le statut de chargement
     _scores.updateAll((key, value) => 0); // Remet tous les scores à zéro
     notifyListeners();
  }
