@@ -32,7 +32,7 @@ class AccueilScreen extends StatelessWidget {
               const SizedBox(height: 60),
               ElevatedButton.icon(
                 icon: const Icon(Icons.auto_fix_high),
-                label: const Text('COMMENCER LE TRI', style: TextStyle(fontSize: 18)),
+                label: const Text('COMMENCER LE TEST', style: TextStyle(fontSize: 18)),
                 style: ElevatedButton.styleFrom(
                   padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 15),
                   backgroundColor: Colors.indigo,

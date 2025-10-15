@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 import 'package:tri_des_sorciers/main.dart';
 import 'package:tri_des_sorciers/models/question.dart';
 import 'package:tri_des_sorciers/screens/resultat_screen.dart';
+// NOUVEL IMPORT : Le widget Patronus Loader
+import 'package:tri_des_sorciers/widgets/patronus_loader.dart';
 
 class QCMScreen extends StatelessWidget {
   const QCMScreen({super.key});
@@ -13,15 +15,29 @@ class QCMScreen extends StatelessWidget {
     // Écoute les changements dans QCMController
     final controller = Provider.of<QCMController>(context);
 
-    if (controller.estTermine) {
-      // Si le QCM est terminé, naviguer vers l'écran de résultat
-      WidgetsBinding.instance.addPostFrameCallback((_) {
+    // --- LOGIQUE DE FIN DE QCM ET CHARGEMENT DU PATRONUS ---
+    
+    // 1. Si le chargement du Patronus est en cours, afficher l'animation.
+    // L'état 'estEnChargement' est mis à jour par le contrôleur pendant 3 secondes.
+    if (controller.estEnChargement) {
+      return const PatronusLoader();
+    }
+    
+    // 2. Si le QCM est terminé ET que le Patronus a fini de se manifester (résultat est prêt), naviguer.
+    if (controller.estTermine && controller.resultatFinal != null) {
+      // Nous utilisons 'addPostFrameCallback' pour naviguer APRÈS la construction du widget
+        WidgetsBinding.instance.addPostFrameCallback((_) {
         Navigator.of(context).pushReplacement(
+          // Passer le résultat final au ResultatScreen
           MaterialPageRoute(builder: (ctx) => const ResultatScreen()),
         );
       });
+      // Renvoyer un placeholder pour éviter l'erreur de navigation dans la même frame
       return const Scaffold(body: Center(child: CircularProgressIndicator()));
     }
+    
+    // Si la logique arrive ici sans être en chargement ou terminée, on est sur une question normale.
+    // --- FIN LOGIQUE DE CHARGEMENT ---
 
     final currentQuestion = controller.questions[controller.indexQuestion];
     final totalQuestions = controller.questions.length;
@@ -45,16 +61,16 @@ class QCMScreen extends StatelessWidget {
               minHeight: 10,
             ),
             const SizedBox(height: 30),
-            
+
             // Texte de la question
             Text(
               currentQuestion.texte,
               textAlign: TextAlign.center,
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.w600),
-            ),
-            const SizedBox(height: 40),
+              ),
+              const SizedBox(height: 40),
 
-            // Liste des réponses (utilise un Expanded pour le défilement si nécessaire)
+            // Liste des réponses
             Expanded(
               child: ListView.builder(
                 itemCount: currentQuestion.reponses.length,
@@ -69,7 +85,8 @@ class QCMScreen extends StatelessWidget {
                         backgroundColor: Colors.indigo.shade50,
                         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
                       ),
-                      onPressed: () {
+                        onPressed: () {
+                        // L'appel à repondre() déclenche désormais le chargement du Patronus si c'est la dernière question
                         controller.repondre(reponse);
                       },
                       child: Text(
