@@ -22,6 +22,7 @@ class SorcierApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Le Tri des Sorciers',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.indigo,
         fontFamily: 'Roboto',
