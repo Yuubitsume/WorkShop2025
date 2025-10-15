@@ -1,0 +1,23 @@
+---
+- name: Create Prometheus configuration directory
+  ansible.builtin.file:
+    path: /opt/{{ project_name }}/prometheus
+    state: directory
+    mode: '0755'
+
+- name: Copy Prometheus configuration file
+  ansible.builtin.copy:
+    src: prometheus.yml
+    dest: /opt/{{ project_name }}/prometheus/prometheus.yml
+
+- name: Create Grafana configuration directory
+  ansible.builtin.file:
+    path: /opt/{{ project_name }}/grafana
+    state: directory
+    mode: '0755'
+
+- name: Copy Grafana configuration file
+  ansible.builtin.copy:
+    src: grafana.ini
+    dest: /opt/{{ project_name }}/grafana/grafana.ini
+

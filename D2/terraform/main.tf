@@ -1,22 +1,65 @@
-resource "aws_vpc" "pra_vpc" {
-  cidr_block = "10.1.0.0/16"
-  tags = { Name = "PRA-Site-B-VPC" }
+provider "aws" {
+  region = var.aws_region
 }
 
-resource "aws_instance" "k8s_node" {
-  count         = 3 # 3 nodes minimum pour la haute disponibilité du cluster
-  ami           = "ami-xxxxxxxxxxxx" # ID d'une image Linux stable
-  instance_type = "t3.large"
-
-  subnet_id = aws_subnet.pra_subnet[0].id
-  key_name  = "ansible-ssh-key" # Clé pour l'accès Ansible
-
+resource "aws_vpc" "main" {
+  cidr_block = "10.0.0.0/16"
   tags = {
-    Name = "k8s-worker-node-${count.index}"
+    Name = "${var.project_name}-vpc"
   }
 }
 
-output "worker_ips" {
-  description = "Liste des IPs privées des nœuds worker"
-  value       = aws_instance.k8s_node[*].private_ip
+resource "aws_subnet" "main" {
+  vpc_id     = aws_vpc.main.id
+  cidr_block = "10.0.1.0/24"
+  availability_zone = "${var.aws_region}a"
+  tags = {
+    Name = "${var.project_name}-subnet"
+  }
 }
+
+resource "aws_security_group" "allow_ssh_http" {
+  name        = "${var.project_name}-allow-ssh-http"
+  description = "Allow SSH and HTTP inbound traffic"
+  vpc_id      = aws_vpc.main.id
+
+  ingress {
+    description = "SSH from VPC"
+    from_port   = 22
+    to_port     = 22
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  ingress {
+    description = "HTTP from VPC"
+    from_port   = 80
+    to_port     = 80
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  egress {
+    from_port   = 0
+    to_port     = 0
+    protocol    = "-1"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
+
+  tags = {
+    Name = "${var.project_name}-sg"
+  }
+}
+
+resource "aws_instance" "web" {
+  ami           = var.ami_id
+  instance_type = var.instance_type
+  subnet_id     = aws_subnet.main.id
+  security_groups = [aws_security_group.allow_ssh_http.name]
+  key_name      = var.key_pair_name
+
+  tags = {
+    Name = "${var.project_name}-web-server"
+  }
+}
+

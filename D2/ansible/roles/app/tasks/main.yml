@@ -1,0 +1,4 @@
+---
+- name: Deploy application containers
+  ansible.builtin.include_tasks: deploy_app.yml
+

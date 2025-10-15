@@ -1,0 +1,35 @@
+---
+- name: Deploy SI with Docker and Monitoring
+  hosts: webservers
+  become: yes
+  vars:
+    project_name: pra-si
+    docker_compose_path: /opt/{{ project_name }}/docker-compose.yml
+
+  roles:
+    - role: docker
+    - role: app
+    - role: monitoring
+
+  tasks:
+    - name: Ensure project directory exists
+      ansible.builtin.file:
+        path: /opt/{{ project_name }}
+        state: directory
+        mode: '0755'
+
+    - name: Copy docker-compose.yml
+      ansible.builtin.template:
+        src: ../docker/docker-compose.yml
+        dest: "{{ docker_compose_path }}"
+
+    - name: Start Docker Compose services
+      community.docker.docker_compose:
+        project_src: /opt/{{ project_name }}
+        state: present
+      environment:
+        # Example environment variables for services
+        POSTGRES_USER: "{{ lookup('env', 'POSTGRES_USER') | default('user') }}"
+        POSTGRES_PASSWORD: "{{ lookup('env', 'POSTGRES_PASSWORD') | default('password') }}"
+        POSTGRES_DB: "{{ lookup('env', 'POSTGRES_DB') | default('mydatabase') }}"
+

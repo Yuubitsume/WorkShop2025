@@ -1,0 +1,33 @@
+graph TD
+    A[Utilisateur] --> B(Load Balancer)
+    B --> C{Frontend Service}
+    B --> D{Backend Service}
+    C --> E(Base de Données)
+    D --> E
+    subgraph Monitoring
+        F[Prometheus] --> G[Grafana]
+        C --> F
+        D --> F
+        E --> F
+    end
+    subgraph Infrastructure as Code
+        H[Terraform] --> I(Cloud Provider)
+        J[Ansible] --> I
+        J --> C
+        J --> D
+        J --> E
+        J --> F
+    end
+    subgraph Sauvegarde & Restauration
+        K[Scripts de Sauvegarde] --> L(Bucket S3 / Stockage Distant)
+        E --> K
+        L --> M[Scripts de Restauration]
+        M --> E
+    end
+    I --> B
+    I --> C
+    I --> D
+    I --> E
+    I --> F
+    I --> G
+
