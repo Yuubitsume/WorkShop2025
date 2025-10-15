@@ -1,0 +1,12 @@
+# pubspec.yaml (partie essentielle à modifier)
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  provider: ^6.1.1 # Ajouter la dépendance pour la gestion d'état
+
+# Ajouter un dossier d'assets (vous devez créer ce dossier et y mettre les images)
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
