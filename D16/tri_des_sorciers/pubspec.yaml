@@ -1,0 +1,22 @@
+# pubspec.yaml (corrigé)
+
+name: tri_des_sorciers # Assurez-vous d'avoir le nom de votre projet ici
+description: Application mobile pour le tri des sorciers.
+# ... autres informations ...
+
+environment:
+  # Définissez une plage de SDK compatible. 
+  # '^3.0.0' est une bonne base pour les projets modernes.
+  sdk: '>=3.0.0 <4.0.0' 
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  provider: ^6.1.1 # Ajouter la dépendance pour la gestion d'état
+
+# Ajouter un dossier d'assets (vous devez créer ce dossier et y mettre les images)
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
