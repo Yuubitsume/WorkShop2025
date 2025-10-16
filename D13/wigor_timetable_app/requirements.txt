@@ -1,0 +1,5 @@
+pysimplegui
+requests
+keyring 
+pytest 
+pytest-cov 
