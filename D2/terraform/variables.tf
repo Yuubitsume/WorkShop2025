@@ -1,23 +1,30 @@
 variable "aws_region" {
-  description = "Région AWS pour le Site de Secours (B)"
+  description = "AWS region to deploy resources"
   type        = string
-  default     = "eu-central-1" # Exemple
+  default     = "eu-west-3" # Paris
+}
+
+variable "project_name" {
+  description = "Name of the project"
+  type        = string
+  default     = "pra-si"
+}
+
+variable "ami_id" {
+  description = "AMI ID for the EC2 instance"
+  type        = string
+  default     = "ami-0f5e8a042940de211" # Ubuntu Server 22.04 LTS (HVM), SSD Volume Type
 }
 
 variable "instance_type" {
-  description = "Type d'instance pour les nœuds Kubernetes"
+  description = "EC2 instance type"
   type        = string
-  default     = "t3.large"
+  default     = "t2.micro"
 }
 
-variable "k8s_node_count" {
-  description = "Nombre de nœuds pour le cluster K8s"
-  type        = number
-  default     = 3
+variable "key_pair_name" {
+  description = "Name of the EC2 Key Pair to allow SSH access"
+  type        = string
+  default     = "my-key-pair"
 }
 
-variable "ssh_key_name" {
-  description = "Nom de la clé SSH utilisée par Ansible"
-  type        = string
-  default     = "ansible-ssh-key"
-}

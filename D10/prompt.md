@@ -1,6 +1,6 @@
-# 🧾 Prompts — Cahier des Charges (Défi Oculus Reparo n°10)
+#  Prompts — Cahier des Charges (Défi Oculus Reparo n°10)
 
-## 🪄 Prompt 1 — Génération initiale du Cahier des Charges
+##  Prompt 1 — Génération initiale du Cahier des Charges
 
 > Voici un autre défi à faire :  
 > *(image du défi « Oculus Reparo n°10 » montrant la consigne)*  
@@ -17,9 +17,9 @@
 
 ---
 
-## 🧙‍♂️ Prompt 2 — Version longue et contextualisée
+##  Prompt 2 — Version longue et contextualisée
 
-> Parfait 🔮  
+> Parfait   
 > Voici une autre version plus longue et complète du **Cahier des Charges** du défi *Oculus Reparo n°10*.  
 >  
 > Je veux que tu **supprimes la consigne** et que tu développes beaucoup plus la **présentation de l’outil**.  
@@ -37,3 +37,11 @@
 > L’outil doit rester cohérent avec l’univers magique, mais réaliste sur le plan technologique.  
 >  
 > Utilise un ton professionnel, clair et engageant, et termine par une conclusion valorisant la synergie entre magie et technologie.
+
+
+Voici le cdc actuel, il faudrait ajouter l'enquete aupres des gens, etudiants enseignant etc...
+
+Et il faudrais aussi faire une refonte avec un vrai outil, c'esta dire un emploi du temps, gestionnaire de presence edusign ou autre mais toujorus dans la DA harry potter.
+
+
+"Inserer cdc actuel"

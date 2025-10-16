@@ -1,0 +1,4 @@
+---
+- name: Setup Prometheus and Grafana
+  ansible.builtin.include_tasks: setup_monitoring.yml
+

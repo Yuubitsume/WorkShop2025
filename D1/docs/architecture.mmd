@@ -1,0 +1,42 @@
+graph TD
+    subgraph "Utilisateurs"
+        U[Utilisateurs / Clients]
+    end
+
+    subgraph "Réseau Externe"
+        U -- HTTPS/443 --> RP[Nginx Reverse Proxy]
+    end
+
+    subgraph "Zone DMZ (Frontend)"
+        RP -- Route /glpi --> GLPI[GLPI]
+        RP -- Route /grafana --> GRA[Grafana]
+        RP -- Route /elasticsearch --> ES_Kibana[Kibana / Accès API ES]
+    end
+
+    subgraph "Réseau Interne (Backend)"
+        GLPI -- Stocke les données --> DB_GLPI[(Base de données GLPI)]
+        GRA -- Interroge --> PROM[Prometheus]
+        GRA -- Interroge --> ES[Elasticsearch Cluster]
+        ES_Kibana -- Interroge --> ES
+    end
+
+    subgraph "Réseau Données (Data)"
+        ES -- Stocke les données --> ES_DATA[(Indices Elasticsearch)]
+        CASS[Cassandra Cluster] -- Stocke les données --> CASS_DATA[(Keyspaces Cassandra)]
+        PROM -- Scrape les métriques --> GLPI
+        PROM -- Scrape les métriques --> GRA
+        PROM -- Scrape les métriques --> ES
+        PROM -- Scrape les métriques --> CASS
+        PROM -- Scrape les métriques --> RP
+    end
+
+    subgraph "Sécurité et Monitoring"
+        FW[Firewall] -- Protège --> RP
+        FW -- Protège --> GLPI
+        FW -- Protège --> GRA
+        FW -- Protège --> ES_Kibana
+    end
+
+    style U fill:#f9f,stroke:#333,stroke-width:2px
+    style RP fill:#bbf,stroke:#333,stroke-width:2px
+    style FW fill:#f00,stroke:#333,stroke-width:2px
